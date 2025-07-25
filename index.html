@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot tiếng Việt - DeepSeek + ElevenLabs</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f0f0; }
+    .chat-container { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; }
+    .chat-log { height: 400px; overflow-y: auto; padding: 20px; }
+    .chat-bubble { margin: 10px 0; padding: 10px 14px; border-radius: 16px; max-width: 80%; }
+    .user { background: #daf1fc; align-self: flex-end; text-align: right; }
+    .bot { background: #eee; }
+    .input-area { display: flex; border-top: 1px solid #ddd; }
+    .input-area input { flex: 1; padding: 10px; border: none; }
+    .input-area button { padding: 10px 15px; border: none; background: #007bff; color: #fff; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-log" id="chat-log"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Nhập câu hỏi..." />
+      <button onclick="sendMessage()">Gửi</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
